@@ -32,7 +32,4 @@ public class User {
     private String password;
 
     private Integer age;
-
-    @OneToMany
-    private Set<Car> car;
 }

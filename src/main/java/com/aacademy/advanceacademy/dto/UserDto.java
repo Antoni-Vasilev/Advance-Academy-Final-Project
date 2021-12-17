@@ -1,12 +1,9 @@
 package com.aacademy.advanceacademy.dto;
 
-import com.aacademy.advanceacademy.model.Car;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-
-import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -22,6 +19,4 @@ public class UserDto {
     private String email;
 
     private Integer age;
-
-//    private Set<Car> car;
 }

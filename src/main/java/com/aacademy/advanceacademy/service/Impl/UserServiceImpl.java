@@ -27,7 +27,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User findByEmail(String email) {
+    public Set<User> findByEmail(String email) {
         return userRepository.findByEmail(email);
     }
 
@@ -42,7 +42,6 @@ public class UserServiceImpl implements UserService {
         User updatedUser = User.builder()
                 .id(foundUser.getId())
                 .age(user.getAge())
-//                .car(user.getCar())
                 .email(user.getEmail())
                 .firstName(user.getFirstName())
                 .lastName(user.getLastName())

@@ -19,7 +19,6 @@ public class UserConverter {
         return UserDto.builder()
                 .id(user.getId())
                 .age(user.getAge())
-//                .car(user.getCar())
                 .email(user.getEmail())
                 .firstName(user.getFirstName())
                 .lastName(user.getLastName())
